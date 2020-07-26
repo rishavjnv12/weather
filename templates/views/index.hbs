@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello Express</title>
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="main-content">
+      {{>header}}
+
+      <p>Use this site to get your weather</p>
+      <form>
+        <input type="text" name="" value="" placeholder="Location">
+        <button type="button" class="search" name="button">Search</button>
+      </form>
+
+      <p id="msg-one">
+
+      </p>
+      <p id="msg-two">
+
+      </p>
+    </div>
+    {{>footer}}
+  </body>
+  <script src="/js/master.js" charset="utf-8"></script>
+</html>
