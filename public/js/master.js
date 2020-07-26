@@ -7,11 +7,12 @@ const search=document.querySelector('input')
 const searchButton=document.querySelector('.search')
 const msgOne=document.querySelector('#msg-one')
 const msgTwo=document.querySelector('#msg-two')
+
 // msgOne.textContent='sgdyi'
 
 let showWeather=(location)=>{
 
-  fetch('http://localhost:3000/weather?address='+location).then((response)=>{
+  fetch('/weather?address='+location).then((response)=>{
     msgOne.textContent='Loading...'
     msgTwo.textContent=''
     response.json().then((data)=>{
