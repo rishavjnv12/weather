@@ -68,7 +68,6 @@ app.get('/products',(req,res)=>{
 
 app.get('/help',(req,res)=>{
   res.render('help',{
-    helpText:'This is some helpful text',
     title:'Help',
     name:'Rishav Kumar'
   })
