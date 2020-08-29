@@ -12,6 +12,7 @@ const forecast = (lat, lon, callback) => {
     } else if (body.name == undefined) {
       console.log('Unable to find location!')
     } else {
+      console.log(body.main)
       callback(undefined,`Current temperature is ${body.main.temp},Cloud coverage is ${body.clouds.all}%`)
     }
   })
